@@ -12,7 +12,7 @@ Um sistema de agendamento online para barbearias, permitindo que clientes agende
 ## Tecnologias Utilizadas
 - **Front-end**: React
 - **Back-end**: Node.js, Express
-- **Banco de Dados**: MongoDB
+- **Banco de Dados**: MySQL
 
 ## Instalação
 1. Clone o repositório:
@@ -27,9 +27,10 @@ Um sistema de agendamento online para barbearias, permitindo que clientes agende
 4. Inicie o servidor:
    ```bash
     npm start
+
 5. Configurar o Banco de Dados
-- Certifique-se de que o MongoDB está instalado e em execução.
-- Crie um arquivo ```.env``` no diretório do back-end com as variáveis necessárias.
+Certifique-se de que o MySQL está instalado e em execução.
+Crie um arquivo ```.env``` no diretório do back-end com as variáveis necessárias, incluindo a string de conexão com o banco de dados MySQL.
 
 6. Inicie o Servidor do Back-end
     ```bash
