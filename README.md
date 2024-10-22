@@ -29,8 +29,8 @@ Um sistema de agendamento online para barbearias, permitindo que clientes agende
     npm start
 
 5. Configurar o Banco de Dados
-Certifique-se de que o MySQL está instalado e em execução.
-Crie um arquivo ```.env``` no diretório do back-end com as variáveis necessárias, incluindo a string de conexão com o banco de dados MySQL.
+- Certifique-se de que o MySQL está instalado e em execução.
+- Crie um arquivo ```.env``` no diretório do back-end com as variáveis necessárias, incluindo a string de conexão com o banco de dados MySQL.
 
 6. Inicie o Servidor do Back-end
     ```bash
