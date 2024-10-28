@@ -1,4 +1,4 @@
-# Projeto de Agendamento Online para Barbearia
+# Projeto de Agendamento Online
 
 ## Descrição do Projeto
 Um sistema de agendamento online para barbearias, permitindo que clientes agendem serviços de forma prática e eficiente.
