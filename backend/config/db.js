@@ -1,19 +1,16 @@
-require ('dotenv').config()
-const { Sequelize } = require('sequelize')
+import dotenv from 'dotenv';
+import { Sequelize } from 'sequelize';
 
-async function dbConnection() {    
+dotenv.config()
 
-    const sequelize = new Sequelize(process.env.DB_NAME, process.env.DB_USER, process.env.DB_PASSWORD, {
-        host: process.env.DB_HOST,
-        dialect: 'mysql'
-    });
+const sequelize = new Sequelize(process.env.DB_NAME, process.env.DB_USER, process.env.DB_PASSWORD, {
+    host: process.env.DB_HOST,
+    dialect: 'mysql'
+});
 
-    try {
-        await sequelize.authenticate();
-        console.log("MySql Conectado :D")
-    } catch (error) {
-        console.log('Tem Alguma Parada Errada Ae Mano, ${error}')
-    }
+try {
+    await sequelize.authenticate();
+    console.log('MySql Conectado :D');
+} catch (error) {
+    console.error('Tem Alguma Parada Errada Ae Mano, ${error}');
 }
-
-module.exports = dbConnection;

@@ -1,3 +1,2 @@
-const dbConnection = require('./config/db')
+const dbConnection = require('./config/db.js')
 
-const sequelize = await dbConnection();
