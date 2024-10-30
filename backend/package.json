@@ -1,12 +1,13 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node config/db.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Heyson",
   "type": "module",
   "license": "ISC",
   "description": "",
@@ -16,5 +17,8 @@
     "express": "^4.21.1",
     "mysql2": "^3.11.3",
     "sequelize": "^6.37.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
   }
 }
