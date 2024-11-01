@@ -4,7 +4,7 @@ import logotipo from "../assets/logotipo.jpg";
 
 const StyledHeader = styled.header`
   width: 100vw;
-  height: 25vh;
+  height: 20vh;
   padding: 20px;
   background-color: #222222;
   display: flex;
@@ -14,13 +14,13 @@ const StyledHeader = styled.header`
 `;
 
 const StyledImage = styled.img`
-  width: 160px;
-  height: 150px;
+  width: 140px;
+  height: 130px;
   cursor: pointer;
 
   &:hover{
-    width: 170px;
-    height:160px;
+    width: 145px;
+    height:135px;
   }
 `;
 
