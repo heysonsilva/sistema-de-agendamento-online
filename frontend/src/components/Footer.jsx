@@ -3,6 +3,11 @@ import styled from "styled-components";
 import { Phone,Instagram } from "lucide-react";
 
 const FooterStyled = styled.footer`
+  font-family: "Lexend", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+
   width: 100vw;
   height: 10vh;
   background-color: rgb(34, 34, 34);

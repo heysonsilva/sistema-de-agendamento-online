@@ -1,11 +1,14 @@
 {
     "cliente": [
-        {"cliente_id": 1, "cliente_nome": "Travis", "telefone":"09876543212"}
+        {"cliente_id": 1, "cliente_nome": "Travis", "telefone":"09876543212"},
+        {"cliente_id": 2, "cliente_nome":"Bryan", "telefone":"89446509008"}
     ],
     "agendamento": [
-        {"agendamento_id": 1, "cliente_id":1, "servico_id":1, "status": "Pendente", "data":"2023-10-29T10:00:00", "hora_termino":"2023-10-29T10:30:00"}
+        {"agendamento_id": 1, "cliente_id":1, "servico_id":1, "status": "Pendente", "data":"2023-10-29T10:00:00", "hora_termino":"2023-10-29T10:30:00"},
+        {"agendamento_id": 2, "cliente_id":2, "servico_id":2, "status": "Concluído", "data":"2024-11-06T13:00:00", "hora_termino":"2024-11-06T13:45:00"}
     ],
     "servico": [
-        {"servico_id": 1,"servico_nome": "Corte Navalhado", "duracao": 1 }
+        {"servico_id": 1,"servico_nome": "Corte Navalhado", "duracao": 30 },
+        {"servico_id": 2, "servico_nome":"Barba","duracao":45}
     ]
 }
