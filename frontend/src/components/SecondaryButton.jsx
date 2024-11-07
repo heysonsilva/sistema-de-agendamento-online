@@ -1,35 +1,35 @@
 import styled from "styled-components";
 
 const ButtonStyled = styled.button`
-  background-color: rgb(0, 191, 98);
+  background-color: rgba(0, 191, 99, 0);
   cursor: pointer;
-  border: none;
+  border: 2px solid #00bf63;
   border-radius: 30px;
   margin-top: 20px;
   color: #ffffff;
   padding: 5px 100px;
-  font-size: 20px;
-  position: relative;
-  top: 3vh;
+  margin: 20px;
+  font-size: 15px;
+  font-weight: 500;
+  position:relative;
+  top:55px;
   transition: background-color;
 
   &:hover {
-    background-color: rgb(1, 71, 38);
+    background-color: #464646;
     transition: 0.5s;
   }
-  &:not(:hover){
+  &:not(:hover) {
     transition: 1.0s;
   }
 `;
 
-function PrimaryButton(props) {
-
+function SecondaryButton() {
   return (
     <>
-      <ButtonStyled> {props.text} </ButtonStyled>
+      <ButtonStyled> ENTRAR </ButtonStyled>
     </>
   );
 }
 
-
-export default PrimaryButton;
+export default SecondaryButton;
