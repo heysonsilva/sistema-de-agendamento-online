@@ -26,10 +26,10 @@ function PrimaryButton(props) {
 
   return (
     <>
-      <ButtonStyled> {props.text} </ButtonStyled>
+      <ButtonStyled type="submit" > {props.text} </ButtonStyled>
     </>
   );
 }
 
 
-export default PrimaryButton;
+export {ButtonStyled, PrimaryButton};

@@ -1,10 +1,9 @@
-import React from "react";
+import { React, useState } from "react";
 import styled from "styled-components";
-import Input from "./Input"
-import PrimaryButton from "./PrimaryButton";
+import Input from "./Input";
+import { PrimaryButton } from "./PrimaryButton";
 
-
-const FormsCadastroStyled = styled.div`
+const FormsCadastroStyled = styled.form`
   width: 70vw;
   height: 100vh;
   display: flex;
@@ -15,23 +14,60 @@ const FormsCadastroStyled = styled.div`
 `;
 
 const TitleStyled = styled.h2`
-  position:absolute;
-  top:25vh;
-  font-size:30px;
+  position: absolute;
+  top: 25vh;
+  font-size: 30px;
   font-weight: 600;
   color: #00bf63;
-`
+`;
 
-function FormsCadastro () {
+function FormsCadastro() {
+  const [nome, setNome] = useState("");
+  const [telefone, setTelefone] = useState("");
+  const [senha, setSenha] = useState("");
+
+  function cadastrarUsuario(e) {
+    e.preventDefault();
+    
+    console.log("Nome:", nome, "Telefone:", telefone, "Senha:", senha);
+  }
+
   return (
-    <FormsCadastroStyled>
-      <TitleStyled> Crie Sua Conta </TitleStyled>
-      <Input iconType="user" id="nome" tipo={'Text'} placeholder={"Nome:"} />
-      <Input iconType="phone" id="nome" tipo={'Number'} placeholder={"Telefone:"} />
-      <Input iconType="key" id="nome" tipo={'Password'} placeholder={"Senha:"} />
-      <PrimaryButton text={"CADASTRE-SE"} />
-    </FormsCadastroStyled>
-  ) 
-};
+      <FormsCadastroStyled onSubmit={cadastrarUsuario}>
+        <TitleStyled> Crie Sua Conta </TitleStyled>
+        <Input
+          iconType="user"
+          id="nome"
+          tipo={"Text"}
+          placeholder={"Nome:"}
+          value={nome}
+          onChange={(e) => {
+            setNome(e.target.value)
+          }}
+        />
+        <Input
+          iconType="phone"
+          id="telefone"
+          tipo={"Number"}
+          placeholder={"Telefone:"}
+          value={telefone}
+          onChange={(e) => {
+            setTelefone(e.target.value);
+          }}
+        />
+        <Input
+          iconType="key"
+          id="senha"
+          tipo={"Password"}
+          placeholder={"Senha:"}
+          value={senha}
+          onChange={(e) => {
+            setSenha(e.target.value);
+          }}
+        />
+        <PrimaryButton type="submit" text={"CADASTRE-SE"} />
+      </FormsCadastroStyled>
+  );
+}
 
 export default FormsCadastro;

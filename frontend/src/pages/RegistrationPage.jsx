@@ -1,7 +1,6 @@
 import styled from "styled-components";
-import FormsCadastro from "../src/components/FormsCadastro";
-import FormsLogin from "./components/FormsLogin";
-
+import RedirectLogin from "../components/RedirectLogin";
+import FormsCadastro from "../components/FormsCadastro"
 
 const MainStyled = styled.main`
   width: 100vw;
@@ -14,7 +13,7 @@ function RegistrationPage() {
   return (
     <>
     <MainStyled>
-      <FormsLogin/>
+      <RedirectLogin/>
       <FormsCadastro />
     </MainStyled>
     </>

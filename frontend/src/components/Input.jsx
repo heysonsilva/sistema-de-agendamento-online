@@ -42,7 +42,7 @@ const LabelStyled = styled.label`
   font-size: 17px;
 `;
 
-function Input({ iconType, placeholder, tipo }) {
+function Input({ iconType, placeholder, tipo, value, onChange  }) {
   // Função para selecionar o ícone com base no prop `iconType`
   const selectIcon = () => {
     switch (iconType) {
@@ -61,7 +61,7 @@ function Input({ iconType, placeholder, tipo }) {
     <>
       <IconInputStyled>{selectIcon()}</IconInputStyled>
       <LabelStyled>{placeholder}</LabelStyled>
-      <InputStyled required type={tipo} />
+      <InputStyled required type={tipo}  value={value} onChange={onChange}/>
     </>
   );
 }
