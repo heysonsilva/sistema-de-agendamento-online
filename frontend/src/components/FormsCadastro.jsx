@@ -28,45 +28,51 @@ function FormsCadastro() {
 
   function cadastrarUsuario(e) {
     e.preventDefault();
-    
+
+    const userDate = {
+      Nome: nome,
+      Telefone: telefone,
+      Senha: senha,
+    };
+
     console.log("Nome:", nome, "Telefone:", telefone, "Senha:", senha);
   }
 
   return (
-      <FormsCadastroStyled onSubmit={cadastrarUsuario}>
-        <TitleStyled> Crie Sua Conta </TitleStyled>
-        <Input
-          iconType="user"
-          id="nome"
-          tipo={"Text"}
-          placeholder={"Nome:"}
-          value={nome}
-          onChange={(e) => {
-            setNome(e.target.value)
-          }}
-        />
-        <Input
-          iconType="phone"
-          id="telefone"
-          tipo={"Number"}
-          placeholder={"Telefone:"}
-          value={telefone}
-          onChange={(e) => {
-            setTelefone(e.target.value);
-          }}
-        />
-        <Input
-          iconType="key"
-          id="senha"
-          tipo={"Password"}
-          placeholder={"Senha:"}
-          value={senha}
-          onChange={(e) => {
-            setSenha(e.target.value);
-          }}
-        />
-        <PrimaryButton type="submit" text={"CADASTRE-SE"} />
-      </FormsCadastroStyled>
+    <FormsCadastroStyled onSubmit={cadastrarUsuario}>
+      <TitleStyled> Crie Sua Conta </TitleStyled>
+      <Input
+        iconType="user"
+        id="nome"
+        tipo={"Text"}
+        placeholder={"Nome:"}
+        value={nome}
+        onChange={(e) => {
+          setNome(e.target.value);
+        }}
+      />
+      <Input
+        iconType="phone"
+        id="telefone"
+        tipo={"Number"}
+        placeholder={"Telefone:"}
+        value={telefone}
+        onChange={(e) => {
+          setTelefone(e.target.value);
+        }}
+      />
+      <Input
+        iconType="key"
+        id="senha"
+        tipo={"Password"}
+        placeholder={"Senha:"}
+        value={senha}
+        onChange={(e) => {
+          setSenha(e.target.value);
+        }}
+      />
+      <PrimaryButton type="submit" text={"CADASTRE-SE"} />
+    </FormsCadastroStyled>
   );
 }
 
