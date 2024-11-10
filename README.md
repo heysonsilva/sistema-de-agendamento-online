@@ -17,10 +17,10 @@ Um sistema de agendamento online para barbearias, permitindo que clientes agende
 ## Instalação
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/agendamento-online.git
+   https://github.com/heysonsilva/sistema-de-agendamento-online.git
 2. Navegue até o diretório do projeto:
    ```bash
-    cd agendamento-online-barbearia
+    cd sistema-de-agendamento-online
 3. Instale as dependências:
    ```bash
     npm install
