@@ -1,7 +1,7 @@
-# Projeto de Sistema Agendamento Online
+# Scheduling System
 
 ## Descrição do Projeto
-Um sistema de agendamento online para barbearias, permitindo que clientes agendem serviços de forma prática e eficiente.
+Um sistema de agendamento online, permitindo que clientes agendem serviços de forma prática e eficiente.
 
 ## Características
 - Cadastro de Clientes
