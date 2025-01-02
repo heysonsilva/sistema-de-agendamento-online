@@ -64,7 +64,7 @@ Este projeto está licenciado sob a MIT License.
 <a href="https://pt-br.react.dev/community/docs-contributors](https://nodejs.org/api/all.html)"> <b> Documentação do Node.js </b> </a>  <br>
 
 ## Status do Projeto
-:construction: ``` Projeto em construção ``` :construction:
+:construction: ``` Projeto Em Construção ``` :construction:
 
 ## Roadmap
 Integração de pagamentos (futuro) <br>
